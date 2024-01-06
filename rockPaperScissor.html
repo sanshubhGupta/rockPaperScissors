@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rockPaperScissor.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='64' height='64'%3E%3Ctext y='50%25' font-size='30' dy='0.35em' text-anchor='middle' x='50%25'%3E👊%3C/text%3E%3C/svg%3E" type="image/svg+xml"><!--Using an emoji as favicon-->
+    <script src="rockPaperScissor.js" defer></script>
 </head>
 <body>
-    <script src="rockPaperScissor.js"></script>
+    <div class="header"><h1 id="heading">Rock Paper Scissors</h1></div>
+    <div class="playArea">
+        <div class="weapons">
+            <h2 id="playerScore">Player : 0</h2>
+            <button id="rock">rock</button>
+            <button id="paper">paper</button>
+            <button id="scissors">scissor</button>
+        </div>
+        <div class="match">
+            <div class="battleGround">
+                <div class="result">
+                    <h2 id="resultShown">Let's Start!</h2>
+                </div>
+                <div class="emojis">
+                    <div class="emoji1">❔</div>
+                    <div class="emoji2">❔</div>
+                </div>
+            </div>
+            <div class="rule">
+                Rule: (first to reach 5 points wins!)
+            </div>
+        </div>
+        <div class="weaponsComp">
+            <h2 id="compScore">Comp : 0</h2>
+            <button id="rockComp">rock</button>
+            <button id="paperComp">paper</button>
+            <button id="scissorsComp">scissor</button>
+        </div>
+    </div>
 </body>
 </html>
