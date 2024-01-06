@@ -167,6 +167,7 @@ function reset(tryAgain){
     comp.textContent=`Comp : ${compScore}`;
     playerEmoji.textContent='❔';
     compEmoji.textContent='❔';
+    resultShown.textContent="Let's Start!"
     tryAgain.remove();
     checkTryAgainBtn=1;
 }
